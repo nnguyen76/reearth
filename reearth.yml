@@ -1,0 +1,74 @@
+id: reearth-plugin-example
+name: Sample plugins
+version: 1.0.1
+extensions:
+  - id: iss
+    type: widget
+    name: Where is Vietnam?
+    widgetLayout:
+      defaultLocation:
+        zone: outer
+        section: right
+        area: top
+  - id: text
+    type: widget
+    name: Text Widget
+    schema:
+      groups:
+        - id: default
+          fields:
+            - id: text
+              type: string
+              title: Text
+  - id: map
+    type: block
+    name: Map Block
+    schema:
+      groups:
+        - id: default
+          fields:
+            - id: location
+              type: latlng
+              title: Location
+  - id: estat-chart
+    type: block
+    name: e-stat
+    schema:
+      groups:
+        - id: default
+          fields:
+            - id: appId
+              type: string
+              title: App ID
+            - id: area
+              type: number
+              title: Area code
+  - id: tagcloud
+    type: widget
+    name: Tag Cloud
+  - id: tweet-widget
+    type: widget
+    name: Tweet Widget
+    schema:
+      groups:
+        - id: default
+          fields:
+            - id: url
+              type: string
+              title: URL
+            - id: hashtags
+              type: string
+              title: Hashtag
+            - id: text
+              type: string
+              title: Text
+  - id: facebook-share-widget
+    type: widget
+    name: Facebook Share Widget
+    schema:
+      groups:
+        - id: default
+          fields:
+            - id: url
+              type: string
+              title: URL

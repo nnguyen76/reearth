@@ -1,0 +1,13 @@
+name: サンプルプラグイン
+extensions:
+  iss:
+    name: 人工衛星
+  text:
+    name: テキスト
+  map:
+    name: 地図
+  estat-chart:
+    name: e-statチャート
+    description: e-statのチャートを表示します。
+  tagcloud:
+    name: タグクラウド
